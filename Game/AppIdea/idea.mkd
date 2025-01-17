@@ -1,0 +1,139 @@
+# Project: Property Damage and Recovery Tracker
+
+## App Design
+
+### 1. User Personas
+- **Wildfire Victim**: Individuals or families who need to document damages and track recovery.
+- **Insurance Agents**: Representatives from insurance companies who will interact with claims.
+- **Contractors**: Verified service providers assisting with repairs and rebuilding.
+
+### 2. User Journeys
+#### A. Wildfire Victim:
+1. **Sign Up/Login**:
+   - Secure account creation.
+   - Onboarding with tutorials.
+
+2. **Report Damage**:
+   - Upload photos/videos.
+   - Fill out a damage description form.
+
+3. **File Insurance Claims**:
+   - Select insurance provider.
+   - Use preloaded templates to auto-fill forms.
+   - Submit documents and monitor claim status.
+
+4. **Track Recovery**:
+   - Use checklist for key recovery milestones.
+   - Receive alerts for pending tasks and deadlines.
+
+5. **Access Resources**:
+   - Browse local relief programs, grants, and verified contractors.
+
+#### B. Insurance Agents:
+1. **Login**:
+   - Secure portal with access control.
+
+2. **Review Claims**:
+   - View submitted claims and attached documents.
+   - Communicate directly with users.
+
+#### C. Contractors:
+1. **Login**:
+   - Secure portal for approved service providers.
+
+2. **Manage Projects**:
+   - Submit estimates and timelines for recovery tasks.
+   - Upload progress reports and invoices.
+
+### 3. Wireframes
+1. **Home Screen**:
+   - Navigation bar (Report Damage, Claims, Recovery, Resources).
+   - Dashboard with current progress and notifications.
+
+2. **Report Damage**:
+   - Photo/video upload widget.
+   - Form for damage description.
+
+3. **Claims**:
+   - Insurance provider selection dropdown.
+   - Document submission section.
+   - Claim status tracker.
+
+4. **Recovery Tracker**:
+   - Checklist view with completed and pending tasks.
+   - Calendar integration for deadlines.
+
+5. **Resources**:
+   - Interactive map for nearby shelters and aid centers.
+   - List of verified contractors.
+
+---
+
+## Project Plan
+
+### Phase 1: MVP Development (3 months)
+1. **Month 1**:
+   - Build core modules: User authentication, damage reporting, and claims submission.
+   - Develop frontend interface using React Native.
+   - Set up backend with Node.js and PostgreSQL.
+
+2. **Month 2**:
+   - Integrate APIs for photo uploads and insurance claim submissions.
+   - Implement basic recovery milestone tracking.
+   - Launch beta testing with selected users.
+
+3. **Month 3**:
+   - Collect user feedback and address issues.
+   - Finalize and deploy the MVP.
+
+### Phase 2: Feature Expansion (2-3 months)
+1. **Add AI-Powered Damage Assessment**:
+   - Train models for estimating repair costs based on photos.
+
+2. **Resource Integration**:
+   - Partner with local agencies for resource listings.
+   - Add real-time map with shelter and aid center locations.
+
+3. **Community Features**:
+   - Implement a forum for shared experiences and advice.
+
+### Phase 3: Advanced Development (Ongoing)
+1. **Enhanced Automation**:
+   - Auto-fill insurance forms using OCR and NLP.
+
+2. **Scalability and Performance**:
+   - Use AWS Lambda for serverless processing.
+   - Set up load balancers for high-traffic periods.
+
+3. **Mobile App Launch**:
+   - Release apps on iOS and Android stores.
+
+---
+
+### Milestones and Deliverables
+- **Month 1**: Working prototype with basic UI/UX.
+- **Month 2**: Fully functional MVP with beta testing.
+- **Month 3**: MVP launch with live user data.
+- **Month 6**: Phase 2 completion with AI and community features.
+- **Ongoing**: Performance tuning and new feature rollouts.
+
+---
+
+### Team Requirements
+1. **Developers**:
+   - 2 Frontend developers (React Native).
+   - 2 Backend developers (Node.js, PostgreSQL).
+   - 1 AI/ML engineer (for Phase 2).
+
+2. **UI/UX Designer**:
+   - Create intuitive interfaces and wireframes.
+
+3. **Project Manager**:
+   - Oversee timelines, deliverables, and team coordination.
+
+4. **QA Tester**:
+   - Ensure app reliability and user satisfaction.
+
+---
+
+Would you like to refine specific features or prioritize a particular phase in the plan?

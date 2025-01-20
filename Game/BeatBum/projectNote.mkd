@@ -1,0 +1,52 @@
+FONT ICONS: https://fontawesome.com/search?q=money&o=r&ic=free&s=solid 
+could also use this for social media icons 
+
+FONT AWESOME: https://cdnjs.com/libraries/font-awesome 
+
+<!-- Animated Glowing line border: https://youtu.be/ezP4kbOvs_E -->
+<!-- Animated Glowing line border: https://youtu.be/i2qjId2QbJw -->
+<!-- Animated Glowing line border: https://youtu.be/b_8fHNIHFk4 -->
+<!-- Animated Moving object on a web page background: https://youtu.be/wuUSVEcK-kM -->
+<!-- Moving object: https://youtu.be/qx7pSLjLNQA?list=PLwJhhWUZudKp7QPVALB_kXUyzj8cBB__L -->
+
+<!-- https://youtu.be/SgmNxE9lWcY -->
+
+<!-- css positioning: https://youtu.be/MxEtxo_AaZ4 -->
+
+<!-- Creating Circle: https://youtu.be/bE8lPxi-zAU -->
+<!-- how do i make items on my landing page overlaps? -->
+<!-- what if I have different class for the items and how formatted in a different location in the html file. -->
+
+I’m designing a web application using html, css, and JavaScript, I’m currently designing the home landing page. How do I implement this key consideration in my design such that my application meets all of this needs? Key Considerations in a Distribution System
+Scalability – Can handle growing numbers of users or data.
+Reliability – Ensures high availability and fault tolerance.
+Efficiency – Optimizes bandwidth, storage, and computational power.
+Security – Protects data and software from unauthorized access and tampering.
+
+To ensure your web application meets the key considerations of a distribution system, here’s how you can implement them in your design:
+
+### 1. Scalability (Handling Growth)
+- Use a Responsive Design – Ensure your landing page adapts to different screen sizes using CSS media queries and frameworks like Bootstrap or Tailwind CSS.
+- Optimize Frontend Code – Minimize CSS and JavaScript files using tools like CSS Minifier and UglifyJS to reduce load times.
+- Leverage a CDN – Store and deliver static assets (images, CSS, JavaScript) via a Content Delivery Network (CDN) like Cloudflare or AWS CloudFront.
+- Modular JavaScript – Use JavaScript modules (ES6+) to structure code efficiently for better maintainability and performance.
+### 2. Reliability (High Availability & Fault Tolerance)
+- Implement Lazy Loading – Load non-critical assets only when needed to improve page load speed and prevent failures from overwhelming requests.
+- Use Caching – Enable browser caching for CSS, JS, and images to reduce server load and improve availability.
+- Deploy on a Reliable Hosting Service – Consider using AWS, Vercel, or Netlify to ensure uptime and failover mechanisms.
+- Monitor Performance – Use tools like Google Lighthouse, New Relic, or Sentry to detect and fix issues early.
+### 3. Efficiency (Optimized Bandwidth, Storage, and Computation)
+- Optimize Images – Use WebP format for images and compress them using TinyPNG or ImageOptim.
+- Minimize HTTP Requests – Reduce the number of external scripts, fonts, and unnecessary plugins.
+- Enable Gzip or Brotli Compression – Compress assets before serving them to reduce bandwidth usage.
+- Use Asynchronous Loading – Load JavaScript files asynchronously to prevent blocking rendering.
+### 4. Security (Protecting Data and Software)
+- Use HTTPS – Ensure your website runs on SSL/TLS to encrypt user data.
+Implement Content Security Policy (CSP) – Prevent cross-site scripting (XSS) attacks by defining allowed sources for scripts and styles.
+- Validate User Input – If you have forms on the landing page, sanitize and validate inputs to prevent injection attacks.
+- Prevent Clickjacking – Use the X-Frame-Options header to prevent your site from being embedded in iframes on malicious sites.
+- Regular Updates – Keep libraries (e.g., Bootstrap, jQuery) updated to fix security vulnerabilities.
+Next Steps
+- Set Up Performance & Security Testing – Use Lighthouse (Chrome DevTools) to check speed, accessibility, and security vulnerabilities.
+- Choose a Deployment Strategy – Consider using AWS S3 + CloudFront, Vercel, or Netlify for efficient hosting.
+- Plan for Future Expansion – If you plan to add backend functionality later, consider using REST APIs, GraphQL, or WebSockets for efficient data handling.

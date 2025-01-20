@@ -1,0 +1,505 @@
+body {
+    background-image: linear-gradient(#020f1a, #020D17);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Animated section starts here */
+
+.box div{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	border: 3px solid rgba(245, 241, 239, 0.411);
+}
+
+.box div:nth-child(1){
+	top: 12%;
+	left: 42%;
+	animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2){
+	top: 70%;
+	left: 50%;
+	animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+	top: 17%;
+	left: 6%;
+	animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4){
+	top: 20%;
+	left: 60%;
+	animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5){
+	top: 67%;
+	left: 10%;
+	animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6){
+	top: 80%;
+	left: 70%;
+	animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7){
+	top: 60%;
+	left: 80%;
+	animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8){
+	top: 32%;
+	left: 25%;
+	animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9){
+	top: 90%;
+	left: 25%;
+	animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10){
+	top: 20%;
+	left: 80%;
+	animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+	0%{
+		transform: scale(0) translate(0) rotate(0);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1.3) translate(-90px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+/* Box animated section ends here */
+
+.button {
+    background-color: #ec4899;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #db2777;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.features div {
+    background: rgba(160, 23, 23, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ********************************************************* */
+
+/* music brand icons */
+/* General styling for the .icon container */
+/* .icon {
+    position: relative;
+    height: 100vh; 
+    width: 100%; 
+}
+
+.icon img {
+    width: 50px; 
+    height: auto; 
+}
+
+.icon-image1 {
+    position: absolute;
+    top: -40%;
+    left: 10%;
+	border-radius: 50%;
+}
+
+.icon-image2 {
+    position: absolute;
+    top: -20%;
+    right: 17%;
+	border-radius: 20%;
+} */
+
+/* .icon-image3 {
+    position: absolute;
+    top: 10%; 
+    left: 20%;
+	border-radius: 20%;
+}
+
+.icon-image4 {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.icon-image5 {
+    position: absolute;
+    bottom: 10%; 
+    left: 10%;
+} */
+
+/* Make the images responsive */
+/* @media (max-width: 768px) {
+    .icon img {
+        width: 40px; 
+    } */
+
+    /* Adjust the positions for smaller screens */
+    /* .icon-image1 {
+        top: 5px;
+        left: 5px;
+    }
+
+    .icon-image2 {
+        top: 5px;
+        right: 5px;
+    }
+
+    .icon-image3 {
+        top: 80px;
+        left: 5px;
+    }
+
+    .icon-image4 {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .icon-image5 {
+        bottom: 5px;
+        left: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon img {
+        width: 30px; 
+    } */
+
+    /* Further adjustments for very small screens */
+    /* .icon-image1, .icon-image2, .icon-image3, .icon-image5 {
+        width: 30px;
+    }
+} */
+
+/* music icon brand icon ends here */
+
+
+/* ************************************************************************************ */
+
+/* Background Circle Blur coloring */
+
+/* Background Circles */
+.background-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.6;
+}
+
+.pink {
+    background-color: rgba(255, 20, 147, 0.5);
+    top: 10%;
+    left: 20%;
+}
+
+.blue {
+    background-color: rgba(30, 144, 255, 0.5);
+    top: 50%;
+    right: 20%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .circle {
+        width: 200px;
+        height: 200px;
+        filter: blur(80px);
+    }
+    
+    .pink {
+        top: 15%;
+        left: 10%;
+    }
+
+    .blue {
+        top: 55%;
+        right: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .circle {
+        width: 150px;
+        height: 150px;
+        filter: blur(60px);
+    }
+
+    .pink {
+        top: 20%;
+        left: 5%;
+    }
+
+    .blue {
+        top: 60%;
+        right: 5%;
+    }
+}
+
+
+/* ************************************************************************ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.35s linear;
+  font-family: "poppins", sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #020f1a;
+}
+
+.card {
+    --color: #ff88a6;
+    --border-size: 1rem;
+    --bg-color: #252525;
+    position: relative;
+    background-color: var(--bg-color);
+    width: 280px;
+    margin: 2rem;
+    border-radius: var(--border-size);
+    color: white;
+    display: grid;
+    place-content: center;
+    padding: 1.5rem 1.5rem;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+}
+
+.card::before {
+  width: 200%;
+  height: 200%;
+  background-image: conic-gradient(var(--color) 0deg, transparent 60deg, transparent 180deg, var(--color) 180deg, transparent 240deg);
+  inset: -50%;
+  z-index: -2;
+  animation: border 8s linear infinite;
+}
+
+.card:hover::before {
+    animation-play-state: paused;
+}
+
+@keyframes border {
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+.card::after {
+    --inset: 0.25rem;
+    background-color: #020f1a;
+    inset: var(--inset);
+    border-radius: calc(var(--border-size) - var(--inset));
+    z-index: -1;
+    transition: all 0.35s linear;
+  }
+  
+  .card:hover::after {
+    background-color: #020c14;
+  }
+
+  .card i {
+    font-size: 2.5rem;
+    margin-inline: auto;
+    color: transparent;
+    -webkit-text-stroke: thin var(--color);
+  }
+  
+  .card:hover i {
+    color: var(--color);
+    -webkit-text-stroke-width: 0;
+  }
+  
+  .card .title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    margin-block: 2.5rem 1.5rem;
+    color: var(--color);
+  }
+
+  .card .detail {
+    line-height: 1.5rem;
+    text-align: center;
+    opacity: 0.75;
+  }
+
+
+/* Footer section */
+/* ************************************************************ */
+
+/* Footer Styling */
+/* Footer Styling */
+.footer {
+    background-color: transparent; /* Transparent background */
+    color: #066160; /* Text color */
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.3px solid #066160; /* Top border outline */
+}
+
+/* Privacy Policy Link */
+.privacy-link {
+    color: #066160;
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon {
+    color: #066160;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Hover Effect */
+.icon:hover, .privacy-link:hover {
+    color: darkslategray;
+    transition: color 0.3s;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .social-icons {
+        gap: 10px; /* Reduce spacing between icons */
+    }
+
+    .icon {
+        font-size: 18px; /* Slightly smaller icons for mobile */
+    }
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 900px) {
+    .footer {
+        padding: 18px;
+    }
+
+    .icon {
+        font-size: 19px;
+    }
+}
+
+
+
+
+
+
+

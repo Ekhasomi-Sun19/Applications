@@ -154,108 +154,10 @@ body {
     }
 }
 
-/* ********************************************************* */
-
-/* music brand icons */
-/* General styling for the .icon container */
-/* .icon {
-    position: relative;
-    height: 100vh; 
-    width: 100%; 
-}
-
-.icon img {
-    width: 50px; 
-    height: auto; 
-}
-
-.icon-image1 {
-    position: absolute;
-    top: -40%;
-    left: 10%;
-	border-radius: 50%;
-}
-
-.icon-image2 {
-    position: absolute;
-    top: -20%;
-    right: 17%;
-	border-radius: 20%;
-} */
-
-/* .icon-image3 {
-    position: absolute;
-    top: 10%; 
-    left: 20%;
-	border-radius: 20%;
-}
-
-.icon-image4 {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-}
-
-.icon-image5 {
-    position: absolute;
-    bottom: 10%; 
-    left: 10%;
-} */
-
-/* Make the images responsive */
-/* @media (max-width: 768px) {
-    .icon img {
-        width: 40px; 
-    } */
-
-    /* Adjust the positions for smaller screens */
-    /* .icon-image1 {
-        top: 5px;
-        left: 5px;
-    }
-
-    .icon-image2 {
-        top: 5px;
-        right: 5px;
-    }
-
-    .icon-image3 {
-        top: 80px;
-        left: 5px;
-    }
-
-    .icon-image4 {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .icon-image5 {
-        bottom: 5px;
-        left: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    .icon img {
-        width: 30px; 
-    } */
-
-    /* Further adjustments for very small screens */
-    /* .icon-image1, .icon-image2, .icon-image3, .icon-image5 {
-        width: 30px;
-    }
-} */
-
-/* music icon brand icon ends here */
-
 
 /* ************************************************************************************ */
 
 /* Background Circle Blur coloring */
-
-/* Background Circles */
 .background-circles {
     position: absolute;
     top: 0;
@@ -344,7 +246,8 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   min-height: 100vh;
-  background-color: #020f1a;
+  /* background-color: #020f1a; */
+  border-bottom: 0.3px solid #066160;
 }
 
 .card {
@@ -496,6 +399,222 @@ section {
         font-size: 19px;
     }
 }
+
+/* ************************************************************************* */
+
+/* Stats Section (Grid Layout) */
+.stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto; /* Reduced margin to 10px */
+    padding: 20px;
+    background: none; /* Ensure no background color is applied */
+}
+
+/* Bullet Points */
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-section li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Image Section */
+.image-section {
+    position: relative;
+}
+
+.image-box {
+    position: relative;
+    display: inline-block;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid teal;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Info Box Overlay */
+.info-box {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.info-box .icon {
+    font-size: 24px;
+}
+
+.info-box .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-box h2 {
+    font-size: 18px;
+    margin: 0;
+    color: rgb(196, 101, 197);
+}
+
+.info-box p {
+    font-size: 14px;
+    color: white;
+}
+
+
+
+/* Stats Boxes *****************************************************************/
+.stats-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    width: 200px;
+    height: 100px;
+    background-color: transparent; /* Transparent background */
+    border: 0.2px solid rgba(255, 255, 255, 0.2); /* Slim border */
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-box h2 {
+    color: #32aaff;
+    margin: 5px 0;
+}
+
+.stat-box p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .stats-container {
+        grid-template-columns: 1fr; /* Stack on smaller screens */
+        text-align: center;
+    }
+
+    .stats-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Responsive Bullet Points (Smaller on Mobile) */
+@media (max-width: 600px) {
+    .info-section li {
+        font-size: 14px;  /* Reduce font size */
+        margin-bottom: 6px; /* Reduce spacing */
+    }
+}
+
+
+
+/* ********************************************************************** */
+
+/* Transparent Box with Border */
+.text-box {
+    position: relative;
+    display: inline-block;
+    padding: 20px 35px;
+    font-size: 25px;
+    color: teal;
+    border: 0.3px solid teal;
+    background-color: rgba(0, 0, 0, 0.333);
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;  /* Brings images closer */
+    margin-top: -30px;
+}
+
+/* Square Image - Slightly Overlapping the Box */
+.square-image {
+    width: 160px;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    left: 90px;
+    top: 100px;
+    z-index: 1;
+    border: 2px solid teal;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Circle Image - Closer to the Box */
+.circle-image {
+    width: 170px;
+    height: 240px;
+    border: 0.3px solid pink;
+    border-radius: 50%;
+    position: relative;
+    right: -10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .text-box {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .square-image {
+        width: 140px;
+        left: -15px;
+    }
+
+    .circle-image {
+        width: 90px;
+        right: -5px;
+    }
+}
+
+
+
 
 
 

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #020f1a, #041c33);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .LinkHome a{
+            text-align: center;
+            display: flex;
+            margin-bottom: 20px;
+            color: teal;
+            text-decoration: none;
+            font-size:x-large;
+        }
+        .container {
+            background: transparent;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(248, 245, 245, 0.5);
+            text-align: left;
+            width: 370px;
+            max-width: 90%;
+        }
+        .brand {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 0.3px solid rgba(255, 255, 255, 0.071); 
+            border-radius: 5px;
+            background: #020f1a2e; 
+            color: white; 
+            outline: none;
+            font-size: 16px;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.142); 
+        }
+        .terms a {
+            color: teal; 
+            text-decoration: none; 
+        }
+
+        .terms a:hover {
+            color: rgb(53, 188, 188); 
+        }
+
+
+        .terms {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .terms input {
+            width: auto;
+            margin-right: 10px;
+        }
+        .sign-btn {
+            background: #ff00ff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 105%;
+        }
+        .separator {
+            margin: 10px 0;
+            color: #bbb;
+        }
+        .google-btn {
+            background: #4286f41a;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 105%;
+        }
+        .footer-text {
+            margin-top: 10px;
+        }
+        .footer-text a {
+            color: teal;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            color: rgb(53, 188, 188);
+            text-decoration: none;
+        }
+    
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 300px;
+                padding: 30px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .sign-btn, .google-btn {
+                padding: 8px;
+            }
+        }
+    </style>    
+</head>
+<body>
+    <div class="LinkHome">
+        <a href="BeatBumHome.html">BeatBum Music</a>
+    </div>
+    <div class="container">
+        <div class="brand">Creat your account</div>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Create a password" required>
+            <div class="terms">
+                <input type="checkbox" required>
+                <label>I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+            </div>
+            <button type="submit" class="sign-btn">Create account</button>
+            <div class="separator">Or continue with</div>
+            <button class="google-btn">Sign up with Google</button>
+            <p class="footer-text">Already have an account? <a href="sign-in.html">Sign in</a></p>
+        </form>
+    </div>
+</body>
+</html>

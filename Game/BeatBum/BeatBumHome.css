@@ -498,20 +498,21 @@ section {
 }
 
 .stat-box {
-    width: 200px;
+    width: 240px;
     height: 100px;
-    background-color: transparent; /* Transparent background */
-    border: 0.2px solid rgba(255, 255, 255, 0.2); /* Slim border */
+    background-color: transparent;
+    /* border: 0.2px solid rgba(255, 255, 255, 0.2); */
     border-radius: 10px;
     text-align: center;
-    padding: 15px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 0px 10px rgba(241, 238, 238, 0.2);
 }
 
 .stat-box h2 {
-    color: #32aaff;
+    color: #e551ff;
     margin: 5px 0;
 }
 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 300px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .forgot {
+            display: block;
+            margin-bottom: 10px;
+            color: #bbb;
+            text-decoration: none;
+        }
+        .sign-btn {
+            background: #ff00ff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .separator {
+            margin: 10px 0;
+            color: #bbb;
+        }
+        .google-btn, .apple-btn {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .google-btn {
+            background: #4285F4;
+            color: white;
+        }
+        .apple-btn {
+            background: black;
+            color: white;
+        }
+        .footer-text {
+            margin-top: 10px;
+        }
+        .footer-text a {
+            color: #ff00ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>BeatBum Music</h3>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <a href="#" class="forgot">Forget password?</a>
+            <button type="submit" class="sign-btn">Sign in</button>
+            <div class="separator">or</div>
+            <button class="google-btn">Continue with Google</button>
+            <button class="apple-btn">Sign in with Apple</button>
+            <p class="footer-text">New to BeatBum? <a href="sign-up.html">Join Now</a></p>
+        </form>
+    </div>
+</body>
+</html>

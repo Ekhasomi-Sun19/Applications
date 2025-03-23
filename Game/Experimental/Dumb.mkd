@@ -1,0 +1,28 @@
+<!-- <div class="icon">
+        <img src="images/Spotify34.png" alt="icon Image 1" class="icon-image1">
+        <img src="images/youtube.png" alt="icon Image 2" class="icon-image2">
+        <img src="images/apple music.png" alt="icon Image 3" class="icon-image3">
+        <img src="images/pandora.png" alt="icon Image 4" class="icon-image4">
+        <img src="images/amazon 1.png" alt="icon Image 5" class="icon-image5">
+    </div> -->
+    <!-- <div class="mt-16 grid grid-cols-3 gap-6 text-center">
+        <div>
+            <h2 class="text-teal-400 text-lg font-semibold">Access Advanced Analytics</h2>
+            <p class="text-gray-400 text-sm">Unlocking advanced analytics on<br>
+                 your music can help you<br>
+                gain deeper insights into<br>
+                 audience engagement, streaming<br>
+                </p>
+        </div>
+        <div>
+            <h2 class="text-teal-400 text-lg font-semibold">Marketing Tool</h2>
+            <p class="text-gray-400 text-sm">Leverage powerful marketing<br> toolsperformance, and trends.<br>
+                Here's how you can access<br>
+               and leverage advanced<br>
+                analytics for your music</p>
+        </div>
+        <div>
+            <h2 class="text-teal-400 text-lg font-semibold">Royalty Tracking</h2>
+            <p class="text-gray-400 text-sm">Easily track your royalties and earnings</p>
+        </div>
+    </div> -->

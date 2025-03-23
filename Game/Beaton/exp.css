@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.slider {
+    max-width: 1150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slider .card {
+    background: #fff;
+    flex: 1;
+    margin: 10px;
+    min-width: 300px; /* Ensure cards adjust properly on smaller screens */
+}
+
+.slider .card .img {
+    height: 200px;
+    width: 100%;
+}
+
+.slider .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .card .content {
+    padding: 10px 20px;
+}
+
+.card .content .title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card .content .sub-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+}
+
+.card .content p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.card .content .btn {
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.card .content .btn button {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card .content .btn button:hover {
+    transform: scale(0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .slider {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        max-width: 100%;
+    }
+    .slider .card {
+        margin: 10px 0; /* Add spacing between stacked cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .card .content .title {
+        font-size: 20px;
+    }
+    .card .content .sub-title {
+        font-size: 18px;
+    }
+    .card .content p {
+        font-size: 14px;
+    }
+    .card .content .btn button {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+}
